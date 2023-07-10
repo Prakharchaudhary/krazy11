@@ -131,55 +131,13 @@ app.patch('/updateDistributionRule/:distributionRuleId', admin_controller.update
 app.delete('/deleteDistributionRule/:distributionRuleId', admin_controller.deleteDistributionRule)
 app.get('/getDistributionRule/:contestDetailId', admin_controller.getDistributionRule)
 app.get('/getPlayer/:matchID', game_controller.postPlayer)
-app.get('/getAllPlayersByRole/:matchID', game_controller.getAllPlayersByRole)
+app.get('/getAllPlayersByRole/:matchID', game_controller.getAllPlayersByRole
 
 
 
-
-
-
-
-
-    
-
-
-
-// updateContestinformation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
+app.get('/', (req, res) => {
+    res.send(' hello world')
+})
 
 
     const port = 6000
